@@ -1,0 +1,176 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tituloDisco{
+  font-size:larger;
+  flex-wrap: wrap;
+  
+}
+
+
+.tarjetaTopup{
+  
+  border: 0px solid #818181;
+  border-radius: 0.6%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  background-color: #1c1c1c;
+  color: white;
+
+}
+.tarjetaTop {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+
+
+  scrollbar-width: thin;
+  scrollbar-color: #444 #222;
+}
+.tituloTopCard{
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  
+}
+.tarjetaTop::-webkit-scrollbar {
+  height: 8px;
+}
+.cardContent {
+  width: 220px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.descripcionMusic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; /* espacio entre autor y año */
+  margin-top: 0.3rem;
+}
+
+.descripcionMusic p {
+  margin: 0;
+}
+
+.descripcionMusic .autor {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.descripcionMusic .año {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+/* boton de play */
+.imgWrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.imagenDisco{
+  width: 150px ;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+.playButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.imgWrapper:hover .playButton {
+  display: block;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* SideBar - NavBar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #121212;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-top: 0;
+  padding-left: 0;
+  gap: 1rem;
+  border-right: 1px solid #2c2c2c;
+}
+
+.sidebar-logo {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar-menu li:hover {
+  background-color: #1e1e1e;
+}
+.logoYT{
+  width: 100%;
+  padding-right: 2px;
+}
+
